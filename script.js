@@ -1,9 +1,9 @@
 /* ANGLER GEAR — storefront interactions
    KONFIGURASI: ganti nomor WhatsApp toko dan tautan sosial di bagian CONFIG sebelum digunakan sungguhan. */
 const STORE_CONFIG = {
-  whatsappNumber: "", // Format internasional tanpa +, contoh 6285889359058",
-  instagramUrl: "",   // Contoh https://instagram.com/Anglergear/",
-  tiktokUrl: ""       // Contoh https://tiktok.com/@Anglergear",
+  whatsappNumber: "", // 6285865795489",
+  instagramUrl: "",   // https://instagram.com/Anglergear/",
+  tiktokUrl: ""       // https://tiktok.com/@Anglergear",
 };
 
 const productData = {
@@ -81,7 +81,7 @@ checkoutBackdrop.addEventListener("click",closeCheckoutModal);
 document.getElementById("checkout-form").addEventListener("submit",e=>{
   e.preventDefault();
   if(!entries().length){alert("Keranjang masih kosong.");closeCheckoutModal();return;}
-  if(!STORE_CONFIG.whatsappNumber){
+  if(!STORE_CONFIG.6285865795489){
     alert("Checkout WhatsApp belum aktif. Buka script.js, lalu isi STORE_CONFIG.whatsappNumber dengan nomor WhatsApp resmi Angler Gear (format internasional tanpa +).");
     return;
   }
