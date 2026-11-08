@@ -1,9 +1,9 @@
 /* ANGLER GEAR — storefront interactions
    KONFIGURASI: ganti nomor WhatsApp toko dan tautan sosial di bagian CONFIG sebelum digunakan sungguhan. */
 const STORE_CONFIG = {
-  whatsappNumber: "", // Format internasional tanpa +, contoh 6285889359058
-  instagramUrl: "",   // Contoh https://instagram.com/Anglergear
-  tiktokUrl: ""       // Contoh https://tiktok.com/@Anglergear
+  whatsappNumber: "", // Format internasional tanpa +, contoh 6285889359058",
+  instagramUrl: "",   // Contoh https://instagram.com/Anglergear/",
+  tiktokUrl: ""       // Contoh https://tiktok.com/@Anglergear",
 };
 
 const productData = {
