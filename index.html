@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Angler Gear — perlengkapan memancing pilihan untuk setiap petualangan.">
+  <title>Angler Gear | Fishing Supply</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"></div>
+  <header class="site-header">
+    <a class="brand" href="#"><img class="brand-logo" src="logo_angler_gear.png" alt="Angler Gear — Fishing Supply"></a>
+    <nav id="nav">
+      <a href="#home">Beranda</a><a href="#products">Produk</a><a href="#about">Tentang Kami</a><a href="#info">Info Belanja</a><a href="#contact">Kontak</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="search-toggle" aria-label="Cari">⌕</button>
+      <button class="cart-btn" id="cart-toggle">Keranjang <span id="cart-count">0</span></button>
+      <button class="menu-btn" id="menu-toggle" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> GEAR UP. GET OUT THERE.</div>
+        <h1>Every cast<br>starts a <em>story.</em></h1>
+        <p>Perlengkapan memancing pilihan untuk menemani setiap petualangan. Siapkan gear terbaik, rasakan pengalaman memancing yang berbeda.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#products">Jelajahi Produk <b>↗</b></a><a class="text-link" href="#about">Kenali Angler Gear <span>→</span></a></div>
+        <div class="hero-stats"><div><strong>Premium</strong><small>Selected gear</small></div><i></i><div><strong>Reliable</strong><small>Quality first</small></div><i></i><div><strong>For anglers</strong><small>Made to explore</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi animasi suasana memancing">
+        <div class="scene-glow"></div>
+        <div class="scene-orbit orbit-one"></div>
+        <div class="scene-orbit orbit-two"></div>
+        <div class="scene-caption">THE ART OF THE CAST <span>✦</span></div>
+        <svg class="fishing-scene" viewBox="0 0 620 470" role="img" aria-label="Ilustrasi pancing, air dan ikan">
+          <defs>
+            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#b9c8b8"/>
+              <stop offset="1" stop-color="#718c7d"/>
+            </linearGradient>
+            <linearGradient id="rod" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#c69b5c"/>
+              <stop offset="1" stop-color="#765936"/>
+            </linearGradient>
+          </defs>
+          <circle cx="310" cy="230" r="178" fill="#dce4d8" opacity=".72"/>
+          <path d="M72 305 Q180 270 275 303 T548 300 L548 385 Q310 425 72 385Z" fill="url(#water)" opacity=".92"/>
+          <path d="M72 324 Q160 307 245 326 T548 321" fill="none" stroke="#edf0e5" stroke-width="3" opacity=".8"/>
+          <path d="M90 355 Q170 340 260 356 T530 352" fill="none" stroke="#e5ede2" stroke-width="2" opacity=".6"/>
+          <path d="M104 378 Q195 365 286 379 T520 375" fill="none" stroke="#e5ede2" stroke-width="2" opacity=".45"/>
+          <path d="M120 274 Q208 250 288 275 T525 268" fill="none" stroke="#8ca494" stroke-width="2" opacity=".65"/>
+          <path d="M115 82 Q210 92 290 157 Q348 203 407 264" fill="none" stroke="url(#rod)" stroke-width="10" stroke-linecap="round"/>
+          <path d="M115 82 Q210 92 290 157 Q348 203 407 264" fill="none" stroke="#f3dfb8" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+          <path d="M407 264 Q430 292 435 328" fill="none" stroke="#263b34" stroke-width="1.5" stroke-dasharray="4 5"/>
+          <g class="bobber">
+            <path d="M435 328 L435 347" stroke="#263b34" stroke-width="2"/>
+            <ellipse cx="435" cy="353" rx="9" ry="14" fill="#b64d38"/>
+            <path d="M426 353 Q435 359 444 353" fill="none" stroke="#f7f2e7" stroke-width="3"/>
+            <circle cx="435" cy="338" r="3" fill="#f6eee0"/>
+          </g>
+          <g class="fish-swim" fill="#314d42">
+            <path d="M0 0 C22 -18 54 -17 72 0 C54 17 22 18 0 0 L-17 -13 L-17 13Z"/>
+            <circle cx="55" cy="-3" r="2.5" fill="#f4f0e5"/>
+            <path d="M24 -10 L36 -23 L43 -8Z" fill="#496b59"/>
+          </g>
+          <g fill="none" stroke="#edf2e8" stroke-width="2" opacity=".8">
+            <path d="M390 369 Q435 359 480 369"/>
+            <path d="M405 382 Q435 376 465 382"/>
+          </g>
+        </svg>
+        <div class="scene-stamp"><small>EST. FOR</small><strong>ANGLERS</strong><span>✦</span></div>
+        <div class="scene-bottom-note">CAST • WAIT • REPEAT</div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✳</span><p><strong>Produk pilihan</strong><small>Gear berkualitas untuk kebutuhanmu</small></p></div>
+      <div><span>↗</span><p><strong>Siap bertualang</strong><small>Teman andal di setiap spot</small></p></div>
+      <div><span>◇</span><p><strong>Belanja mudah</strong><small>Pilih produk dalam beberapa klik</small></p></div>
+    </section>
+
+    <section class="products section-wrap" id="products">
+      <div class="section-heading"><div><div class="eyebrow"><span></span> OUR COLLECTION</div><h2>Gear up for <em>the catch.</em></h2><p>Pilih perlengkapan memancing sesuai kebutuhan. Baca spesifikasi sebelum memasukkan produk ke keranjang.</p></div><div class="product-tools"><label class="search-box" id="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Cari produk..."></label><select id="sort-select" aria-label="Urutkan produk"><option value="default">Urutkan: Pilihan</option><option value="low">Harga terendah</option><option value="high">Harga tertinggi</option></select></div></div>
+      <div class="category-row"><button class="filter active" data-filter="all">Semua produk <span>03</span></button><button class="filter" data-filter="bag">Tas pancing</button><button class="filter" data-filter="box">Kotak pancing</button><button class="filter" data-filter="bait">Umpan buatan</button></div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-id="box" data-category="box" data-price="30000" data-name="Kotak Pancing">
+          <div class="product-image"><span class="product-tag">BEST SELLER</span><img src="carbon_fishing_rod.jpg" alt="Kotak Pancing"><button class="quick-add" data-add="box">+ Tambah</button></div>
+          <div class="product-info"><div class="product-type">STORAGE / TACKLE BOX</div><h3>Kotak Pancing</h3><div class="product-bottom"><strong>Rp30.000</strong><span>Detail &amp; spesifikasi →</span></div><button class="detail-btn" data-detail="box">Lihat detail produk</button></div>
+        </article>
+        <article class="product-card" data-id="bag" data-category="bag" data-price="80000" data-name="Tas Pancing">
+          <div class="product-image"><span class="product-tag muted-tag">NEW ARRIVAL</span><img src="precision_spinning_reel.jpg" alt="Tas Pancing"><button class="quick-add" data-add="bag">+ Tambah</button></div>
+          <div class="product-info"><div class="product-type">BAG / ROD CASE</div><h3>Tas Pancing</h3><div class="product-bottom"><strong>Rp80.000</strong><span>Detail &amp; spesifikasi →</span></div><button class="detail-btn" data-detail="bag">Lihat detail produk</button></div>
+        </article>
+        <article class="product-card" data-id="bait" data-category="bait" data-price="5000" data-name="Umpan Buatan">
+          <div class="product-image"><span class="product-tag muted-tag">ESSENTIAL</span><img src="tackle_box_kit.jpg" alt="Umpan Buatan"><button class="quick-add" data-add="bait">+ Tambah</button></div>
+          <div class="product-info"><div class="product-type">LURE / ARTIFICIAL BAIT</div><h3>Umpan Buatan</h3><div class="product-bottom"><strong>Rp5.000</strong><span>Detail &amp; spesifikasi →</span></div><button class="detail-btn" data-detail="bait">Lihat detail produk</button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>Produk tidak ditemukan. Coba kata kunci lain.</p>
+    </section>
+
+    <section class="story" id="about"><div class="story-copy"><div class="eyebrow"><span></span> MORE THAN EQUIPMENT</div><h2>For the love<br>of <em>the outdoors.</em></h2><p>Angler Gear hadir untuk para pemancing yang percaya bahwa setiap perjalanan punya cerita. Kami mengkurasi perlengkapan fungsional dan berkualitas agar kamu bisa lebih fokus menikmati setiap momen di alam.</p><a class="text-link" href="#products">Temukan gear pilihan <span>→</span></a></div></section>
+
+    <section class="info-section section-wrap" id="info">
+      <div class="section-heading info-heading"><div><div class="eyebrow"><span></span> SHOP WITH CONFIDENCE</div><h2>Informasi <em>belanja.</em></h2><p>Informasi singkat untuk membantu pengalaman belanja perlengkapan memancingmu.</p></div></div>
+      <div class="info-grid">
+        <article class="info-card"><span class="info-icon">↗</span><h3>Pengiriman</h3><p>Pesanan diproses setiap hari kerja. Estimasi pengiriman 2–5 hari kerja, menyesuaikan lokasi tujuan dan jasa ekspedisi.</p><small>SIMULASI INFORMASI TOKO</small></article>
+        <article class="info-card"><span class="info-icon">◇</span><h3>Pembayaran</h3><p>Pembayaran dapat dilakukan melalui transfer bank, e-wallet, atau metode pembayaran lain yang tersedia saat konfirmasi pesanan.</p><small>SIMULASI INFORMASI TOKO</small></article>
+        <article class="info-card"><span class="info-icon">✳</span><h3>Garansi &amp; Retur</h3><p>Jika produk diterima dalam kondisi rusak atau tidak sesuai, hubungi tim kami maksimal 2 × 24 jam setelah pesanan diterima.</p><small>SIMULASI INFORMASI TOKO</small></article>
+      </div>
+      <article class="privacy-note"><span class="info-icon">⌑</span><div><h3>Privasi pelanggan</h3><p>Data yang dimasukkan pada formulir pesanan hanya digunakan sebagai contoh alur pemesanan pada demo ini. Jangan memasukkan data pribadi atau pembayaran yang sensitif. Pada toko yang sudah beroperasi, kebijakan privasi harus disesuaikan dengan praktik pengelolaan data yang sebenarnya.</p></div></article>
+      <p class="demo-disclaimer">Catatan: informasi pengiriman, pembayaran, retur, dan privasi ini merupakan contoh kebijakan untuk demo. Sesuaikan sebelum website digunakan untuk transaksi nyata.</p>
+    </section>
+
+    <section class="reviews-section section-wrap" id="reviews">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span></span> CUSTOMER FEEDBACK</div><h2>Ulasan <em>pelanggan.</em></h2>
+        <p>Bagikan pengalaman setelah mencoba produk Angler Gear.</p></div>
+      </div>
+      <div class="review-layout">
+        <div class="review-list-wrap">
+          <div class="review-summary"><strong id="review-count">Belum ada ulasan</strong><span id="review-note">Ulasan demo disimpan pada browser ini.</span></div>
+          <div id="review-list" class="review-list"><p class="review-empty">Belum ada ulasan pelanggan yang terverifikasi. Jadilah yang pertama memberikan masukan.</p></div>
+        </div>
+        <form id="review-form" class="review-form">
+          <h3>Tulis ulasan</h3>
+          <label>Nama tampilan<input name="reviewer" required maxlength="40" placeholder="Nama kamu"></label>
+          <label>Produk<select name="product" required><option value="bag">Fishing Rod Bag</option><option value="box">Kotak Pancing</option><option value="bait">Umpan Buatan</option></select></label>
+          <label>Penilaian<select name="rating" required><option value="5">5 — Sangat baik</option><option value="4">4 — Baik</option><option value="3">3 — Cukup</option><option value="2">2 — Kurang</option><option value="1">1 — Buruk</option></select></label>
+          <label>Pengalaman<textarea name="comment" required maxlength="500" rows="4" placeholder="Ceritakan pengalaman atau saran kamu..."></textarea></label>
+          <button class="primary-btn" type="submit">Kirim ulasan <b>→</b></button>
+          <small>Mode demo: ulasan tersimpan secara lokal di browser, belum dikirim ke server dan bukan ulasan pembelian terverifikasi.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-copy"><div class="eyebrow"><span></span> WE'RE HERE TO HELP</div><h2>Ada yang ingin<br>kamu tanyakan?</h2><p>Butuh bantuan memilih perlengkapan, menanyakan stok, atau ingin mengetahui detail pesanan? Hubungi tim Angler Gear melalui kontak berikut.</p>
+        <div class="contact-list">
+          <div><span class="contact-symbol">✉</span><span><small>EMAIL DEMO</small><strong>anglergear@gmail.com</strong></span></div>
+          <div><span class="contact-symbol">☏</span><span><small>WHATSAPP</small><strong>6285865795489</strong></span></div>
+          <div><span class="contact-symbol">⌖</span><span><small>ALAMAT TOKO</small><strong>Salatiga, Jawa Tengah</strong></span></div>
+        </div>
+      </div>
+      <aside class="contact-hours"><div class="hours-mark">AG<span>✦</span></div><div class="eyebrow">CUSTOMER SERVICE</div><h3>Siap membantu<br>petualanganmu.</h3>
+        <div class="hours-row"><span>Senin – Jumat</span><strong>09.00 – 17.00</strong></div><div class="hours-row"><span>Sabtu</span><strong>09.00 – 15.00</strong></div><div class="hours-row"><span>Minggu &amp; Hari Libur</span><strong>Tutup</strong></div>
+        <small class="demo-disclaimer">Kontak, alamat, dan jam operasional di atas merupakan placeholder. Ganti dengan informasi usaha yang benar sebelum dipublikasikan.</small>
+      </aside>
+    </section>
+  </main>
+
+  <footer><div class="footer-main"><div><a class="brand footer-brand" href="#"><img class="brand-logo" src="logo_angler_gear.png" alt="Angler Gear — Fishing Supply"></a><p>Gear up. Get out there. Make every cast count.</p></div><div class="footer-links"><strong>Jelajahi</strong><a href="#products">Produk</a><a href="#about">Tentang Kami</a><a href="#info">Informasi Belanja</a><a href="#reviews">Ulasan</a></div><div class="footer-links"><strong>Hubungi Kami</strong><a href="mailto:halo@anglergear.demo">halo@anglergear.demo</a><a href="#contact">WhatsApp (6285865795489)</a><a href="#contact">Detail Kontak</a><strong class="social-title">Media sosial</strong><a href="#contact">Instagram —  https://www.instagram.com/anglergear</a><a href="#contact">TikTok — https://www.tiktok.com/@anglergear</a></div></div><div class="footer-bottom"><small>© 2026 Angler Gear. Website demo Angler Gear — konfigurasikan kontak dan kebijakan sebelum transaksi nyata.</small><a href="#home">Kembali ke atas ↑</a></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Keranjang belanja"><div class="drawer-head"><div><small>YOUR SELECTION</small><h3>Keranjang</h3></div><button id="close-cart" aria-label="Tutup">×</button></div><div id="cart-items" class="cart-items"><p class="cart-empty">Keranjangmu masih kosong.</p></div><div class="cart-summary"><div><span>Subtotal</span><strong id="cart-subtotal">Rp0</strong></div><button id="checkout" class="primary-btn checkout-btn">Lanjutkan checkout <b>→</b></button><small>Biaya pengiriman dihitung saat konfirmasi.</small></div></aside>
+
+  <div class="modal-backdrop" id="product-modal-backdrop" hidden></div>
+  <section class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="product-modal-title" hidden>
+    <button class="modal-close" type="button" data-close-modal aria-label="Tutup">×</button>
+    <div class="modal-product-image"><img id="modal-product-image" src="carbon_fishing_rod.jpg" alt=""></div>
+    <div class="modal-product-copy"><div class="eyebrow"><span></span> PRODUCT DETAILS</div><h2 id="product-modal-title">Detail produk</h2><p id="modal-product-description"></p><div class="modal-price" id="modal-product-price"></div><div id="modal-product-specs" class="spec-grid"></div><p class="stock-note" id="modal-product-stock"></p><button class="primary-btn" id="modal-add-cart" type="button">Tambah ke keranjang <b>+</b></button></div>
+  </section>
+
+  <div class="modal-backdrop" id="checkout-backdrop" hidden></div>
+  <section class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" hidden>
+    <button class="modal-close" type="button" data-close-checkout aria-label="Tutup">×</button>
+    <div class="eyebrow"><span></span> ORDER INFORMATION</div><h2 id="checkout-title">Data <em>pesanan.</em></h2>
+    <p class="checkout-intro">Lengkapi data berikut. Pesanan akan disiapkan sebagai ringkasan WhatsApp untuk dikonfirmasi.</p>
+    <form id="checkout-form">
+      <label>Nama lengkap<input name="customerName" required maxlength="80" placeholder="Nama penerima"></label>
+      <label>Nomor WhatsApp<input name="customerPhone" required inputmode="tel" maxlength="20" placeholder="Contoh: 081234567890"></label>
+      <label>Alamat pengiriman<textarea name="customerAddress" required rows="3" maxlength="400" placeholder="Jalan, nomor rumah, kecamatan, kota, kode pos"></textarea></label>
+      <label>Catatan pesanan (opsional)<textarea name="customerNote" rows="2" maxlength="250" placeholder="Warna/variasi atau catatan lain"></textarea></label>
+      <div class="checkout-total"><span>Total sementara</span><strong id="checkout-total">Rp0</strong></div>
+      <button class="primary-btn" type="submit">Kirim pesanan via WhatsApp <b>↗</b></button>
+      <small class="demo-disclaimer">Pastikan nomor WhatsApp toko diatur pada script.js sebelum checkout digunakan. Pembayaran belum diproses otomatis.</small>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
