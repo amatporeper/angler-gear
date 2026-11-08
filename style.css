@@ -76,3 +76,49 @@
 footer{display:block;padding:48px max(7%,calc((100% - 1120px)/2)) 25px}.footer-main{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px;padding-bottom:38px}.footer-main>div:first-child p{font-size:11px;color:var(--muted);margin-top:12px}.footer-links{display:flex;flex-direction:column;align-items:flex-start;gap:11px;font-size:11px;color:var(--muted)}.footer-links strong{color:var(--ink);font:700 12px Manrope;margin-bottom:4px}.footer-links a:hover,.footer-bottom a:hover{color:#9b784b}.footer-bottom{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:20px;color:#8a948c;font-size:10px}.footer-bottom a{font-size:10px;white-space:nowrap}
 @media(max-width:750px){.info-grid{grid-template-columns:1fr}.info-card{min-height:0}.contact-section{grid-template-columns:1fr;padding:65px 7%;gap:35px}.footer-main{grid-template-columns:1fr 1fr}.footer-main>div:first-child{grid-column:1/-1}}
 @media(max-width:480px){.footer-main{grid-template-columns:1fr;gap:28px}.footer-main>div:first-child{grid-column:auto}.footer-bottom{flex-direction:column}.contact-hours{padding:28px 23px}.hours-row{font-size:9px}.hours-row strong{font-size:9px}}
+
+
+/* === Angler Gear: detail produk, checkout, ulasan, kebijakan === */
+.detail-btn{margin-top:13px;border:1px solid var(--line);background:transparent;padding:10px 12px;width:100%;text-align:left;font-size:10px;color:#65736a;cursor:pointer;transition:.2s}
+.detail-btn:hover{border-color:var(--gold);color:var(--ink);background:#f1f2eb}
+.product-card[hidden]{display:none!important}
+.privacy-note{display:flex;gap:18px;align-items:flex-start;background:#f1f2eb;border:1px solid var(--line);padding:22px;margin-top:20px}
+.privacy-note .info-icon{flex:none;margin:0}
+.privacy-note h3{font:700 14px Manrope;margin:3px 0 7px}
+.privacy-note p{font-size:11px;line-height:1.8;color:var(--muted)}
+.reviews-section{background:#fbfaf6}
+.review-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;margin-top:35px;align-items:start}
+.review-summary{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:0 0 17px;margin-bottom:15px}
+.review-summary strong{font:700 14px Manrope}.review-summary span{font-size:10px;color:var(--muted)}
+.review-list{display:grid;gap:12px}.review-empty{font-size:12px;line-height:1.8;color:var(--muted);padding:25px;background:#f1f2eb}
+.review-item{padding:18px 0;border-bottom:1px solid var(--line)}.review-item-head{display:flex;justify-content:space-between;gap:12px}.review-item strong{font:700 12px Manrope}.review-item small{font-size:9px;color:var(--muted)}.review-stars{color:#ad874d;letter-spacing:2px;margin:8px 0;font-size:12px}.review-item p{font-size:12px;line-height:1.7;color:#59675e}
+.review-form{background:#eef1e9;padding:27px;display:grid;gap:14px}.review-form h3{font:700 20px Manrope;margin-bottom:3px}.review-form label,.checkout-modal label{display:grid;gap:7px;font-size:10px;font-weight:700;color:#526158}.review-form input,.review-form select,.review-form textarea,.checkout-modal input,.checkout-modal textarea{width:100%;border:1px solid #d8ded4;background:#fffefa;padding:12px;font-size:12px;color:var(--ink);outline:none;border-radius:0}.review-form input:focus,.review-form select:focus,.review-form textarea:focus,.checkout-modal input:focus,.checkout-modal textarea:focus{border-color:var(--gold)}
+.review-form small{font-size:9px;line-height:1.6;color:#7c887e}
+.modal-backdrop{position:fixed;inset:0;background:#0b1714b8;z-index:50}
+.product-modal,.checkout-modal{position:fixed;z-index:51;top:50%;left:50%;transform:translate(-50%,-50%);width:min(900px,calc(100% - 30px));max-height:90vh;overflow:auto;background:var(--paper);box-shadow:0 25px 80px #0003}
+.product-modal[hidden],.checkout-modal[hidden],.modal-backdrop[hidden]{display:none}
+.product-modal{display:grid;grid-template-columns:.9fr 1.1fr}
+.modal-product-image{background:#edf0e8;min-height:430px}.modal-product-image img{width:100%;height:100%;object-fit:cover}
+.modal-product-copy{padding:48px 42px;position:relative}.modal-product-copy h2,.checkout-modal h2{font:700 clamp(28px,4vw,40px) Manrope;letter-spacing:-.05em;margin:16px 0 12px}.modal-product-copy>p{font-size:12px;line-height:1.8;color:var(--muted)}
+.modal-price{font:800 20px Manrope;margin:18px 0}
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line);margin:18px 0}
+.spec-grid div{padding:12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.spec-grid small{display:block;font-size:8px;color:var(--muted);margin-bottom:5px;text-transform:uppercase;letter-spacing:.08em}.spec-grid strong{font-size:11px}
+.stock-note{font-size:10px!important;margin-bottom:17px}
+.modal-close{position:absolute;right:14px;top:12px;z-index:2;border:0;background:#fffefa;width:35px;height:35px;border-radius:50%;font-size:23px;cursor:pointer}
+.checkout-modal{padding:42px;width:min(560px,calc(100% - 28px))}
+.checkout-intro{font-size:11px;color:var(--muted);line-height:1.7;margin:10px 0 22px}
+#checkout-form{display:grid;gap:14px}
+.checkout-total{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px;font-size:12px}.checkout-total strong{font:800 17px Manrope}
+#checkout-form .primary-btn{width:100%;justify-content:space-between}
+.social-title{margin-top:10px}
+@media(max-width:700px){
+ .review-layout{grid-template-columns:1fr}.review-form{padding:22px}
+ .product-modal{grid-template-columns:1fr;width:min(520px,calc(100% - 24px))}
+ .modal-product-image{min-height:220px;height:230px}.modal-product-copy{padding:28px 22px}
+ .checkout-modal{padding:32px 22px;max-height:88vh}
+ .review-summary{flex-direction:column}
+}
+@media(max-width:420px){
+ .spec-grid{grid-template-columns:1fr 1fr}.modal-product-image{height:190px;min-height:190px}
+ .detail-btn{font-size:9px}.product-bottom{align-items:flex-start;gap:8px;flex-direction:column}
+}
